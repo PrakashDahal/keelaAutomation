@@ -4,6 +4,7 @@
  - Install node in your machine if you do not have it. 
     - *Note: Make sure that the version of node is above 14*
  - Clone repo from https://github.com/PrakashDahal/keelaAutomation.git
+   - `git clone https://github.com/PrakashDahal/keelaAutomation.git` 
  - Go inside the repo
    - `cd keelaAutomation`
  - Install cypress and its packages
