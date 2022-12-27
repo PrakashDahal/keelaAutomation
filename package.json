@@ -1,0 +1,24 @@
+{
+  "name": "keela-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "rm -rf cypress/reports/ &&  rm -rf cypress/videos",
+    "start": "cypress run --reporter mochawesome --headed",
+    "start:headless": "cypress run",
+    "ui": "cypress open"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.2.0",
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "esbuild": "^0.16.10"
+  }
+}
