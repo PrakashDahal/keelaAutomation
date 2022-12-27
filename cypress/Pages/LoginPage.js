@@ -3,11 +3,11 @@ const Password = "#user-password"
 
 
 export function enterEmail(email) {
-    cy.get(UserName).type(email)
+    cy.get(UserName).type("{selectAll}" + email)
 }
 
 export function enterPassword(password) {
-    cy.get(Password).type(password)
+    cy.get(Password).type("{selectAll}" + password)
 }
 
 export function submit() {
