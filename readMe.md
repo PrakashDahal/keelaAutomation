@@ -19,3 +19,7 @@
     -  `npm run start:headless`
  -  Open the UI of the cypress and execute the test on your own
     -  `npm run ui`
+
+
+## *Note: Check the HTML report inside mochawesome-report*
+<img src="./images/report.png"/>

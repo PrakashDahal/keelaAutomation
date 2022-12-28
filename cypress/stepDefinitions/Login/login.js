@@ -1,5 +1,5 @@
 import { Given, Then, When } from "@badeball/cypress-cucumber-preprocessor";
-import { checkLoginFail, checkLoginSuccess, enterEmail, enterPassword, submit } from "../../Pages/LoginPage";
+import { checkLoginFail, checkLoginSuccess, enterEmail, enterPassword, logOut, submit } from "../../Pages/LoginPage";
 import userData from '../../fixtures/credentials.json'
 
 Given('User visits to login page', () => {
@@ -24,4 +24,8 @@ Then('Check login success', () => {
 
 Then('Login should fail with error message as {string}', (message) => {
     checkLoginFail(message)
+})
+
+When('User logs out from the system', () => {
+    logOut()
 })
